@@ -1,0 +1,38 @@
+@-webkit-keyframes jj {
+	0% {
+		margin-top: 10px;
+		margin-left:100px;
+	}
+
+	50% {
+		margin-top: 500px;
+		margin-left:1200px;
+	}
+
+	100%{
+		margin-top: 10px;
+		margin-left: 100px;
+		transform: rotate(720deg);
+	}
+}
+
+.box {
+	width:100px;
+	height: 100px;
+	background-color: black;
+	margin-left:100px;
+
+	animation-name: jj;
+	animation-duration: 10s;
+	animation-direction: reverse;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-timing-function: linear;
+	transition-property: transform, background-color;
+
+}
+
+.box:hover{
+
+	background-color: blue;
+}
